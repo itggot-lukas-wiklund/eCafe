@@ -8,8 +8,8 @@
 </head>
 <body>
 	<header>
-		<a onclick="goToPage('home')"><h1>eCafé</h1></a>
-		<a onclick="goToPage('cart')"><!--<div class="image-cart"></div>--><img src="img/cart.png"></a>
+		<a href="#" onclick="goToPage('home')"><h1>eCafé</h1></a>
+		<a href="#" onclick="goToPage('cart')"><!--<div class="image-cart"></div>--><img src="img/cart.png"></a>
 	</header>
 
 	<div class="content">
@@ -20,19 +20,34 @@
 				<div class="category">
 					<h3>Läsk</h3>
 					<img src="img/soda.png">
-					<a href="soda.html"><button>Handla Läsk</button></a>
+					<button onclick="goToPage('soda')">Handla Läsk</button>
 				</div>
 				<div class="category">
 					<h3>Godis</h3>
 					<img src="img/candy.png">
-					<a href="soda.html"><button>Handla Godis</button></a>
+					<button onclick="goToPage('candy')">Handla Godis</button>
 				</div>
 				<div class="category">
 					<h3>Chips</h3>
 					<img src="img/chips.png">
-					<a href="soda.html"><button>Handla Chips</button></a>
+					<button onclick="goToPage('chips')">Handla Chips</button>
 				</div>
 			</div>
+		</div>
+
+		<div id="soda" class="hidden">
+			<a href="#" onclick="goToPage('home')"><-- Tillbaka till Kategorier</a>
+			<h2>Läsk</h2>
+		</div>
+
+		<div id="candy" class="hidden">
+			<a href="#" onclick="goToPage('home')"><-- Tillbaka till Kategorier</a>
+			<h2>Godis</h2>
+		</div>
+
+		<div id="chips" class="hidden">
+			<a href="#" onclick="goToPage('home')"><-- Tillbaka till Kategorier</a>
+			<h2>Chips</h2>
 		</div>
 
 		<div id="cart" class="hidden">

@@ -34,6 +34,16 @@ header img, header div {
 	height: 64px;
 }
 
+header a {
+	color: black;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+	color: blue;
+}
+
 .content {
 	padding-left: 32px;
 	padding-right: 32px;
@@ -55,11 +65,6 @@ header img, header div {
 
 .banner {
 	width: 100%;
-}
-
-a {
-	cursor: pointer;
-	text-decoration: none;
 }
 
 .grid {
