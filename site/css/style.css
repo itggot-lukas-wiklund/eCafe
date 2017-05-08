@@ -69,6 +69,8 @@ a {
 }
 
 .category {
+	width: 200px;
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -85,14 +87,11 @@ a {
 }
 
 .category img {
-	height: 96px;
+	height: 128px;
 	padding-bottom: 16px;
 }
 
-
-
-
-
+/* Images */
 .image-cart, .image-banner {
 	display: inline-block;
 	background: url('png.png') no-repeat;
