@@ -22,9 +22,8 @@ function toBumpyCase(str) {
     return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 }
 
-function addToCart(item) {
+function addToCart(item, price) {
 	var index = cart.indexOf(item);
-	console.log(index);
 	if (index >= 0) {
 		count[index]++;
 	} else {
@@ -32,11 +31,19 @@ function addToCart(item) {
 		count.push(1);
 	}
 
-	console.clear();
-	console.log("Cart:");
+	if (cart.length > 0) {
+		var no_items = document.getElementById("no-items");
+		if (!no_items.classList.contains("hidden")) {
+			no_items.classList.add("hidden");
+		}
+	}
+
+	var cart_table = document.getElementById("cart-table");
+	var content = "<tr><th>Produkt</th><th>Antal</th><th>Pris</th></tr>";
 	for (i = 0; i < cart.length; i++) {
 		item = cart[i];
 		amnt = count[i];
-		console.log(item + ": " + amnt);
+		content += "<tr><td>" + item + "</td><td>" + amnt + "</td><td>" + price + " kr x " + amnt + " st = " + (amnt * price) + " kr</td></tr>";
 	}
+	cart_table.innerHTML = content;
 }

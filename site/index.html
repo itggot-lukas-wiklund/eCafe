@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=false">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 <body>
 	<header>
@@ -21,7 +21,7 @@
 			<div class="grid">
 				<div class="category">
 					<h3>Läsk</h3>
-					<img src="img/soda/cocacola.png" alt="">
+					<img src="img/soda/cocacola_classic.png" alt="">
 					<button onclick="goToPage('soda')">Handla Läsk</button>
 				</div>
 				<div class="category">
@@ -43,23 +43,23 @@
 			<div class="grid">
 				<div class="category">
 					<h3>Coca-Cola Classic</h3>
-					<img src="img/soda/cocacola.png">
-					<button onclick="addToCart('Coca-Cola Classic')">Lägg till i Kundvagnen</button>
+					<img src="img/soda/cocacola_classic.png">
+					<button onclick="addToCart('Coca-Cola Classic', 10)">Lägg till i Kundvagnen</button>
 				</div>
 				<div class="category">
 					<h3>Coca-Cola Zero</h3>
-					<img src="img/soda/cocacola.png">
-					<button onclick="addToCart('Coca-Cola Zero')">Lägg till i Kundvagnen</button>
+					<img src="img/soda/cocacola_zero.png">
+					<button onclick="addToCart('Coca-Cola Zero', 10)">Lägg till i Kundvagnen</button>
 				</div>
 				<div class="category">
 					<h3>Coca-Cola Light</h3>
-					<img src="img/soda/cocacola.png">
-					<button onclick="addToCart('Coca-Cola Light')">Lägg till i Kundvagnen</button>
+					<img src="img/soda/cocacola_light.png">
+					<button onclick="addToCart('Coca-Cola Light', 10)">Lägg till i Kundvagnen</button>
 				</div>
 				<div class="category">
 					<h3>Coca-Cola Life</h3>
-					<img src="img/soda/cocacola.png">
-					<button onclick="addToCart('Coca-Cola Life')">Lägg till i Kundvagnen</button>
+					<img src="img/soda/cocacola_life.png">
+					<button onclick="addToCart('Coca-Cola Life', 10)">Lägg till i Kundvagnen</button>
 				</div>
 			</div>
 		</div>
@@ -76,6 +76,8 @@
 
 		<div id="cart" class="hidden">
 			<h2>Cart</h2>
+			<p id="no-items">No items in cart!</p>
+			<table id="cart-table"></table>
 		</div>
 	</div>
 

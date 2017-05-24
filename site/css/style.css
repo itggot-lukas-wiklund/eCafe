@@ -43,6 +43,21 @@ a {
 	font-family: "Segoe UI";
 }
 
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	background-color: transparent;
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 21px;
+	border: 1px solid #dddddd;
+}
+
+table td, table th {
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+
 .content {
 	padding-left: 32px;
 	padding-right: 32px;
