@@ -50,14 +50,38 @@ table {
 	width: 100%;
 	max-width: 100%;
 	margin-bottom: 21px;
-	border: 1px solid #dddddd;
+	border: 1px solid #DDDDDD;
 	font-size: 20px;
 }
 
 table td, table th {
-	background-color: #fff;
-	border: 1px solid #ddd;
+	background-color: white;
+	border: 1px solid #DDDDDD;
 	padding: 20px;
+}
+
+button.submit, input[type="button"].submit {
+	width: 400px;
+	height: 56px;
+	font-size: 24px;
+	background-color: white;
+	border: 1px solid #DDDDDD;
+	color: black;
+}
+
+input[type="input"] {
+	width: 400px;
+	height: 56px;
+	font-size: 22px;
+	background-color: white;
+	border: 1px solid #DDDDDD;
+	color: black;
+	padding-left: 32px;
+	padding-right: 32px;
+	margin-bottom: 20px;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+     box-sizing: border-box;
 }
 
 .content {
@@ -114,4 +138,31 @@ table td, table th {
 
 .center-text {
 	text-align: center;
+}
+
+.align-left {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.uppercase { 
+    text-transform: uppercase;
+}
+
+/* Remove uppercase from placeholder */
+::-webkit-input-placeholder {
+    text-transform: none;
+}
+
+:-moz-placeholder {
+    text-transform: none;
+}
+
+::-moz-placeholder {
+    text-transform: none;
+}
+
+:-ms-input-placeholder {
+    text-transform: none;
 }
