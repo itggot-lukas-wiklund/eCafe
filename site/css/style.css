@@ -110,17 +110,6 @@ table td, table th {
 	padding-bottom: 16px;
 }
 
-/* Images */
-.image-cart, .image-banner {
-	display: inline-block;
-	background: url('png.png') no-repeat;
-	overflow: hidden;
-	text-indent: -9999px;
-	text-align: left;
-}
- 
-.image-cart {
-	background-position: -5px -0px;
-	width: 2000px;
-	height: 2000px;
+.center-text {
+	text-align: center;
 }
