@@ -51,11 +51,13 @@ table {
 	max-width: 100%;
 	margin-bottom: 21px;
 	border: 1px solid #dddddd;
+	font-size: 20px;
 }
 
 table td, table th {
 	background-color: #fff;
 	border: 1px solid #ddd;
+	padding: 20px;
 }
 
 .content {
