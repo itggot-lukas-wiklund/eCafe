@@ -31,13 +31,6 @@ function addToCart(item, price) {
 		count.push(1);
 	}
 
-	if (cart.length > 0) {
-		var no_items = document.getElementById("no-items");
-		if (!no_items.classList.contains("hidden")) {
-			no_items.classList.add("hidden");
-		}
-	}
-
 	var cart_table = document.getElementById("cart-table");
 	var content = "<tr><th>Produkt</th><th>Antal</th><th>Pris</th></tr>";
 	for (i = 0; i < cart.length; i++) {
