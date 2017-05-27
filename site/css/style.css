@@ -28,7 +28,11 @@ header {
      margin-bottom: 32px;
 }
 
-header img, header div {
+header .small {
+	height: 64px;
+}
+
+header .large {
 	height: 96px;
 }
 
