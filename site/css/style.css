@@ -154,6 +154,10 @@ input[type="input"] {
 	text-align: center;
 }
 
+.right-text {
+	text-align: right;
+}
+
 .align-left {
 	display: flex;
 	flex-direction: column;
@@ -162,6 +166,10 @@ input[type="input"] {
 
 .uppercase { 
     text-transform: uppercase;
+}
+
+.bold {
+	font-weight: bold;
 }
 
 /* Remove uppercase from placeholder */
