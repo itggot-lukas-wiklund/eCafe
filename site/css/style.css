@@ -64,13 +64,28 @@ table td, table th {
 	padding: 20px;
 }
 
-button.submit, input[type="button"].submit {
-	width: 400px;
-	height: 56px;
-	font-size: 24px;
+button, input[type="button"] {
 	background-color: white;
 	border: 1px solid #DDDDDD;
 	color: black;
+	width: 200px;
+	height: 56px;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+button.small, input[type="button"].small {
+	width: 150px;
+	height: 42px;
+	font-size: 18px;
+}
+
+button.two-line, input[type="button"].two-line {
+	height: 56px;
+}
+
+button.submit, input[type="button"].submit {
+	width: 400px;
 }
 
 input[type="input"] {
