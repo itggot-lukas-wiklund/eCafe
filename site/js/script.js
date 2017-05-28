@@ -1,18 +1,20 @@
-cart_items = []
-cart_count = []
-cart_categories = []
+cart_items = [];
+cart_count = [];
+cart_categories = [];
 
 function goToPage(pageID) {
-	var home = document.getElementById("home");
-	var soda = document.getElementById("soda");
-	var candy = document.getElementById("candy");
+	var home = document.getElementById("hem");
+	var soda = document.getElementById("läsk");
+	var candy = document.getElementById("godis");
 	var chips = document.getElementById("chips");
-	var cart = document.getElementById("cart");
+	var cart = document.getElementById("kundvagn");
+	var checkout = document.getElementById("kassa");
 	home.classList.add("hidden");
 	soda.classList.add("hidden");
 	candy.classList.add("hidden");
 	chips.classList.add("hidden");
 	cart.classList.add("hidden");
+	checkout.classList.add("hidden");
 
 	var page = document.getElementById(pageID);
 	page.classList.remove("hidden");

@@ -2,79 +2,105 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Home | eCafé</title>
+	<title>Hem | eCafé</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<header>
-		<a href="#" onclick="goToPage('home')"><img src="img/logo.png" class="large" alt="eCafé"></a>
-		<a href="#" onclick="goToPage('cart')"><!--<div class="image-cart"></div>--><img src="img/cart.png" alt="Kundvagn" class="small"></a>
+		<a href="#" onclick="goToPage('hem')"><img src="img/logo.png" class="large" alt="eCafé"></a>
+		<a href="#" onclick="goToPage('kundvagn')"><!--<div class="image-cart"></div>--><img src="img/cart.png" alt="Kundvagn" class="small"></a>
 	</header>
 
 	<div class="content">
-		<div id="home">
+		<div id="hem">
 			<img class="banner" src="img/banner.png" alt='10% rabatt på all läsk med koden "LIRRE"'>
 			<h2>Kategorier</h2>
-			<div class="grid">
+			<div class="categories">
 				<div class="category">
 					<h3>Läsk</h3>
-					<img src="img/soda/cocacola_classic.png" alt="">
-					<button onclick="goToPage('soda')" class="small">Handla Läsk</button>
+					<img src="img/soda/cocacola_classic.png" alt="Coca-Cola Classic-burk">
+					<button onclick="goToPage('läsk')" class="small">Läsk</button>
 				</div>
 				<div class="category">
 					<h3>Godis</h3>
-					<img src="img/candy.png" alt="">
-					<button onclick="goToPage('candy')" class="small">Handla Godis</button>
+					<img src="img/candy.png" alt="Godispåse">
+					<button onclick="goToPage('godis')" class="small">Godis</button>
 				</div>
 				<div class="category">
 					<h3>Chips</h3>
-					<img src="img/chips.png" alt="">
-					<button onclick="goToPage('chips')" class="small">Handla Chips</button>
+					<img src="img/chips.png" alt="Chipspåse">
+					<button onclick="goToPage('chips')" class="small">Chips</button>
 				</div>
 			</div>
 		</div>
 
-		<div id="soda" class="hidden">
-			<a href="#" onclick="goToPage('home')">&lt;-- Tillbaka till Kategorier</a>
+		<div id="läsk" class="hidden">
+			<a href="#" onclick="goToPage('hem')">&lt;-- Tillbaka till Kategorier</a>
 			<h2>Läsk</h2>
-			<div class="grid">
-				<div class="category">
-					<h3>Coca-Cola Classic</h3>
-					<img src="img/soda/cocacola_classic.png">
-					<button onclick="addToCart('Coca-Cola Classic', 10, 'Läsk')" class="small two-line">Lägg till i Kundvagnen</button>
+			<div class="products">
+				<div class="product">
+					<img src="img/soda/cocacola_classic.png" alt="Coca-Cola Classic-burk">
+					<div class="info">
+						<h2>Coca-Cola Classic</h3>
+						<div class="specs">
+							<h3>Pris: 10 kr</h3>
+							<h3>Volym: 33 cl</h3>
+						</div>
+						<button onclick="addToCart('Coca-Cola Classic', 10, 'Läsk')" class="small wide">Lägg till i Kundvagnen</button>
+					</div>
 				</div>
-				<div class="category">
-					<h3>Coca-Cola Zero</h3>
-					<img src="img/soda/cocacola_zero.png">
-					<button onclick="addToCart('Coca-Cola Zero', 10, 'Läsk')" class="small two-line">Lägg till i Kundvagnen</button>
+				<div class="product">
+					<img src="img/soda/cocacola_zero.png" alt="Coca-Cola Zero-burk">
+					<div class="info">
+						<h2>Coca-Cola Zero</h3>
+						<div class="specs">
+							<h3>Pris: 10 kr</h3>
+							<h3>Volym: 33 cl</h3>
+						</div>
+						<button onclick="addToCart('Coca-Cola Zero', 10, 'Läsk')" class="small wide">Lägg till i Kundvagnen</button>
+					</div>
 				</div>
-				<div class="category">
-					<h3>Coca-Cola Light</h3>
-					<img src="img/soda/cocacola_light.png">
-					<button onclick="addToCart('Coca-Cola Light', 10, 'Läsk')" class="small two-line">Lägg till i Kundvagnen</button>
+				<div class="product">
+					<img src="img/soda/cocacola_light.png" alt="Coca-Cola Light-burk">
+					<div class="info">
+						<h2>Coca-Cola Light</h3>
+						<div class="specs">
+							<h3>Pris: 10 kr</h3>
+							<h3>Volym: 33 cl</h3>
+						</div>
+						<button onclick="addToCart('Coca-Cola Light', 10, 'Läsk')" class="small wide">Lägg till i Kundvagnen</button>
+					</div>
 				</div>
-				<div class="category">
-					<h3>Coca-Cola Life</h3>
-					<img src="img/soda/cocacola_life.png">
-					<button onclick="addToCart('Coca-Cola Life', 10, 'Läsk')" class="small two-line">Lägg till i Kundvagnen</button>
+			</div>
+			<div class="products">
+				<div class="product">
+					<img src="img/soda/cocacola_life.png" alt="Coca-Cola Life-burk">
+					<div class="info">
+						<h2>Coca-Cola Life</h3>
+						<div class="specs">
+							<h3>Pris: 10 kr</h3>
+							<h3>Volym: 33 cl</h3>
+						</div>
+						<button onclick="addToCart('Coca-Cola Life', 10, 'Läsk')" class="small wide">Lägg till i Kundvagnen</button>
+					</div>
 				</div>
 			</div>
 		</div>
 
-		<div id="candy" class="hidden">
-			<a href="#" onclick="goToPage('home')">&lt;-- Tillbaka till Kategorier</a>
+		<div id="godis" class="hidden">
+			<a href="#" onclick="goToPage('hem')">&lt;-- Tillbaka till Kategorier</a>
 			<h2>Godis</h2>
 		</div>
 
 		<div id="chips" class="hidden">
-			<a href="#" onclick="goToPage('home')">&lt;-- Tillbaka till Kategorier</a>
+			<a href="#" onclick="goToPage('hem')">&lt;-- Tillbaka till Kategorier</a>
 			<h2>Chips</h2>
 		</div>
 
-		<div id="cart" class="hidden">
+		<div id="kundvagn" class="hidden">
 			<h2>Kundvagn</h2>
 			<table id="cart-table">
 				<tr>
@@ -87,9 +113,13 @@
 				</tr>
 			</table>
 			<div class="align-left">
-				<input type="input" class="submit uppercase" name="coupon_code" placeholder="Rabattkod">
-				<button class="submit" onclick="goToPage('checkout')">Till kassan</button>
+				<input type="text" class="submit uppercase" name="coupon_code" placeholder="Rabattkod">
+				<button class="submit" onclick="goToPage('kassa')">Till kassan</button>
 			</div>
+		</div>
+
+		<div id="kassa" class="hidden">
+			<h2>Kassa</h2>
 		</div>
 	</div>
 
