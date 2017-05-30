@@ -1,7 +1,7 @@
-cart_items = [];
-cart_count = [];
-cart_prices = [];
-cart_categories = [];
+cartItems = [];
+cartCount = [];
+cartPrices = [];
+cartCategories = [];
 
 function goToPage(pageID) {
 	var home = document.getElementById("hem");
@@ -29,23 +29,23 @@ function toBumpyCase(str) {
 }
 
 function addToCart(item, price, category) {
-	var index = cart_items.indexOf(item);
+	var index = cartItems.indexOf(item);
 	if (index >= 0) {
-		cart_count[index]++;
+		cartCount[index]++;
 	} else {
-		cart_items.push(item);
-		cart_count.push(1);
-		cart_prices.push(price);
-		cart_categories.push(category);
+		cartItems.push(item);
+		cartCount.push(1);
+		cartPrices.push(price);
+		cartCategories.push(category);
 	}
 
 	var cartTable = document.getElementById("cart-table");
 	var content = "<tr><th>Produkt</th><th>Antal</th><th>Pris</th></tr>";
 	var totalPrice = 0;
-	for (i = 0; i < cart_items.length; i++) {
-		var item = cart_items[i];
-		var count = cart_count[i];
-		var price = cart_prices[i];
+	for (i = 0; i < cartItems.length; i++) {
+		var item = cartItems[i];
+		var count = cartCount[i];
+		var price = cartPrices[i];
 		var totalItemPrice = count * price;
 		content += "<tr><td>" + item + "</td><td>" + count + "</td><td>" + totalItemPrice + " kr</td></tr>";
 		totalPrice += totalItemPrice;
