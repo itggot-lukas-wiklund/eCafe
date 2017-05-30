@@ -47,7 +47,7 @@ function addToCart(item, price, category) {
 		var count = cart_count[i];
 		var price = cart_prices[i];
 		var totalItemPrice = count * price;
-		content += "<tr><td>" + item + "</td><td>" + count + "</td><td>" + price + " kr x " + count + " st = " + totalItemPrice + " kr</td></tr>";
+		content += "<tr><td>" + item + "</td><td>" + count + "</td><td>" + totalItemPrice + " kr</td></tr>";
 		totalPrice += totalItemPrice;
 	}
 	content += "<tr><td colspan='2'></td><td class='bold'>Total: " + totalPrice + " kr</td></tr>";
