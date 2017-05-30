@@ -1,5 +1,6 @@
 cart_items = [];
 cart_count = [];
+cart_prices = [];
 cart_categories = [];
 
 function goToPage(pageID) {
@@ -34,6 +35,7 @@ function addToCart(item, price, category) {
 	} else {
 		cart_items.push(item);
 		cart_count.push(1);
+		cart_prices.push(price);
 		cart_categories.push(category);
 	}
 
@@ -41,10 +43,11 @@ function addToCart(item, price, category) {
 	var content = "<tr><th>Produkt</th><th>Antal</th><th>Pris</th></tr>";
 	var totalPrice = 0;
 	for (i = 0; i < cart_items.length; i++) {
-		item = cart_items[i];
-		amnt = cart_count[i];
-		var totalItemPrice = amnt * price;
-		content += "<tr><td>" + item + "</td><td>" + amnt + "</td><td>" + price + " kr x " + amnt + " st = " + totalItemPrice + " kr</td></tr>";
+		var item = cart_items[i];
+		var count = cart_count[i];
+		var price = cart_prices[i];
+		var totalItemPrice = count * price;
+		content += "<tr><td>" + item + "</td><td>" + count + "</td><td>" + price + " kr x " + count + " st = " + totalItemPrice + " kr</td></tr>";
 		totalPrice += totalItemPrice;
 	}
 	content += "<tr><td colspan='2'></td><td class='bold'>Total: " + totalPrice + " kr</td></tr>";
