@@ -1,7 +1,6 @@
 cartItems = [];
 cartCount = [];
 cartPrices = [];
-cartCategories = [];
 
 function goToPage(pageID) {
 	var home = document.getElementById("hem");
@@ -21,10 +20,9 @@ function goToPage(pageID) {
 		cartItems = [];
 		cartCount = [];
 		cartPrices = [];
-		cartCategories = [];
 		updateCart()
 	}
-	
+
 	home.classList.add("hidden");
 	soda.classList.add("hidden");
 	candy.classList.add("hidden");
@@ -42,7 +40,7 @@ function toBumpyCase(str) {
     });
 }
 
-function addToCart(item, price, category) {
+function addToCart(item, price) {
 	var index = cartItems.indexOf(item);
 	if (index >= 0) {
 		cartCount[index]++;
@@ -50,7 +48,6 @@ function addToCart(item, price, category) {
 		cartItems.push(item);
 		cartCount.push(1);
 		cartPrices.push(price);
-		cartCategories.push(category);
 	}
 
 	updateCart();
