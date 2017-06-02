@@ -215,6 +215,12 @@ input[type="text"] {
 	font-weight: bold;
 }
 
+.center-div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 /* Remove uppercase from placeholder */
 ::-webkit-input-placeholder {
     text-transform: none;
