@@ -154,9 +154,8 @@ input[type="text"] {
      box-sizing: border-box;
 }
 
-.category img {
-	height: 128px;
-	padding-bottom: 16px;
+.category div.sprite {
+	margin-bottom: 16px;
 }
 
 .product {
@@ -188,8 +187,8 @@ input[type="text"] {
 	width: 100%;
 }
 
-.product img {
-	height: 128px;
+.product div.sprite {
+	padding-right: 16px;
 	margin-right: 16px;
 }
 
@@ -289,7 +288,7 @@ input[type="text"] {
 		width: 100%;
 	}
 
-	.category img {
+	.category div.sprite {
 		height: 96px;
 	}
 
