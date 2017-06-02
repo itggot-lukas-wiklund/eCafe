@@ -79,10 +79,6 @@ button.small, input[type="button"].small {
 	font-size: 18px;
 }
 
-button.two-line, input[type="button"].two-line {
-	height: 56px;
-}
-
 button.submit, input[type="button"].submit {
 	width: 400px;
 }
