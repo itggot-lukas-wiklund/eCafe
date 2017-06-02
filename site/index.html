@@ -157,13 +157,18 @@
 				</tr>
 			</table>
 			<div class="align-left">
-				<input type="text" class="submit uppercase" name="coupon_code" placeholder="Rabattkod">
-				<button class="submit" onclick="goToPage('kassa')">Till kassan</button>
+				<input type="text" class="submit uppercase" id="coupon-code" placeholder="Rabattkod">
+				<button class="submit" onclick="goToPage('beställning_klar')">Betala</button>
 			</div>
 		</div>
 
-		<div id="kassa" class="hidden">
-			<h2>Kassa</h2>
+		<div id="beställning_klar" class="hidden">
+			<div class="center-div">
+				<h2 class="center-text">Tack för ditt köp!</h2>
+				<h3 class="center-text">Din leverans kommer levereras inom 10 minuter med en drönare.</h3>
+				<hr />
+				<button class="submit" onclick="goToPage('hem')">Gå till Startsidan</button>
+			</div>
 		</div>
 	</div>
 

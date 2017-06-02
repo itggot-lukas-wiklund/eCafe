@@ -9,15 +9,29 @@ function goToPage(pageID) {
 	var candy = document.getElementById("godis");
 	var chips = document.getElementById("chips");
 	var cart = document.getElementById("kundvagn");
-	var checkout = document.getElementById("kassa");
+	var orderCompleted = document.getElementById("beställning_klar");
+
+	var page = document.getElementById(pageID);
+	if (page == orderCompleted) {
+		if (cartItems.length == 0) {
+			alert("Du kan inte betala med en tom kundvagn!");
+			return;
+		}
+
+		cartItems = [];
+		cartCount = [];
+		cartPrices = [];
+		cartCategories = [];
+		updateCart()
+	}
+	
 	home.classList.add("hidden");
 	soda.classList.add("hidden");
 	candy.classList.add("hidden");
 	chips.classList.add("hidden");
 	cart.classList.add("hidden");
-	checkout.classList.add("hidden");
+	orderCompleted.classList.add("hidden");
 
-	var page = document.getElementById(pageID);
 	page.classList.remove("hidden");
 	document.title = toBumpyCase(pageID) + " | eCafé";
 }
@@ -39,9 +53,18 @@ function addToCart(item, price, category) {
 		cartCategories.push(category);
 	}
 
+	updateCart();
+}
+
+function updateCart() {
 	var cartTable = document.getElementById("cart-table");
 	var content = "<tr><th>Produkt</th><th>Antal</th><th>Pris</th></tr>";
 	var totalPrice = 0;
+	if (cartItems.length == 0) {
+		content += "<tr><td colspan='3'><h3 class='center-text'>Inga produkter i kundvagnen!</h3></td></tr>"
+		cartTable.innerHTML = content;
+		return;
+	}
 	for (i = 0; i < cartItems.length; i++) {
 		var item = cartItems[i];
 		var count = cartCount[i];
