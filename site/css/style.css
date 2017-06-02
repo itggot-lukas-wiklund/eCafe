@@ -52,7 +52,6 @@ table {
 	border-spacing: 0;
 	background-color: transparent;
 	width: 100%;
-	max-width: 100%;
 	margin-bottom: 21px;
 	border: 1px solid #DDDDDD;
 	font-size: 20px;
@@ -164,6 +163,8 @@ input[type="text"] {
 	width: 350px;
 	padding: 16px;
 
+	margin-bottom: 32px;
+
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -206,7 +207,7 @@ input[type="text"] {
 	align-items: flex-end;
 }
 
-.uppercase { 
+.uppercase {
     text-transform: uppercase;
 }
 
@@ -299,6 +300,30 @@ input[type="text"] {
 	button.wide, input[type="button"].wide {
 		width: 100%;
 		max-width: none;
+	}
+
+	button.submit, input[type="button"].submit {
+		width: 100%;
+		max-width: 400px;
+	}
+
+	input[type="text"] {
+		width: 100%;
+		max-width: 400px;
+	}
+
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+		background-color: transparent;
+		width: 100%;
+		font-size: 16px;
+	}
+
+	table td, table th {
+		background-color: white;
+		border: 1px solid #DDDDDD;
+		padding: 8px;
 	}
 }
 
