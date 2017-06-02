@@ -332,3 +332,88 @@ input[type="text"] {
 		padding: 8px;
 	}
 }
+
+/* Sprites */
+.sprite {
+    background-image: url("../img/spritesheet.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-bilar {
+    width: 110px;
+    height: 128px;
+    background-position: -5px -5px;
+}
+
+.sprite-bilar_sur {
+    width: 99px;
+    height: 128px;
+    background-position: -125px -5px;
+}
+
+.sprite-cocacola_classic {
+    width: 67px;
+    height: 128px;
+    background-position: -234px -5px;
+}
+
+.sprite-cocacola_life {
+    width: 70px;
+    height: 128px;
+    background-position: -311px -5px;
+}
+
+.sprite-cocacola_light {
+    width: 67px;
+    height: 128px;
+    background-position: -5px -143px;
+}
+
+.sprite-cocacola_zero {
+    width: 67px;
+    height: 128px;
+    background-position: -82px -143px;
+}
+
+.sprite-dill {
+    width: 76px;
+    height: 128px;
+    background-position: -159px -143px;
+}
+
+.sprite-gottblandat {
+    width: 128px;
+    height: 128px;
+    background-position: -245px -143px;
+}
+
+.sprite-gottblandat_sur {
+    width: 128px;
+    height: 128px;
+    background-position: -5px -281px;
+}
+
+.sprite-grill {
+    width: 76px;
+    height: 128px;
+    background-position: -143px -281px;
+}
+
+.sprite-lattsaltade {
+    width: 78px;
+    height: 128px;
+    background-position: -229px -281px;
+}
+
+.sprite-nappar {
+    width: 128px;
+    height: 128px;
+    background-position: -391px -5px;
+}
+
+.sprite-sourcream_onion {
+    width: 76px;
+    height: 128px;
+    background-position: -383px -143px;
+}
