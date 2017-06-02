@@ -332,8 +332,3 @@ input[type="text"] {
 		padding: 8px;
 	}
 }
-
-/* Landscape tablet style */
-@media screen and (max-width: 1024px) and (max-height: 768px) and (min-width: 361px) and (min-height: 641px){
-	
-}
